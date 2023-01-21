@@ -17,28 +17,37 @@
 <style>
     div {
         background: black;
-        height: 100vh;
-        width: 100vw;
+        /* height: 100vh;
+        width: 100vw; */
+        display: grid;
+        grid-template-areas:
+        "header header header header"
+        "main main aside"
+        "footer footer footer" ;
     }
 
     header {
         background: red;
         height: 100px;
+        grid-area: header;
     }
 
     main {
         background: blue;
-        height: 100px;
+        height: 400px;
+        grid-area: main;
     }
 
     aside {
         background: yellow;
         height: 400px;
+        grid-area: aside;
     }
 
     footer {
         background: purple;
         height: 100px;
+        grid-area: footer;
     }
 
 </style>
